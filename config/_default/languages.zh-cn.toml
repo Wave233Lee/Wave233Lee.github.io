@@ -1,7 +1,7 @@
 languageCode = "zh-cn"
 languageName = "Simplified Chinese"
 weight = 1
-title = "Blowfish"
+title = "404NotFound"
 
 [params]
   displayName = "简体中文"
@@ -14,14 +14,14 @@ title = "Blowfish"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
-  name = "若谷"
+  name = "404NotFound"
   image = "avatar.jpg"
-  headline = "404 Not Found"
+  headline = "Lost & Found"
   bio = ""
 links = [
-  { email = "mailto:hello@your_domain.com" },
-  { link = "https://link-to-some-website.com/" },
-  { github = "https://github.com/username" },
-  { steam = "https://steamcommunity.com/profiles/userid" },
-  { x-twitter = "https://twitter.com/username" },
+  { email = "mailto:admin@wavelee.top" },
+  { link = "https://www.wavelee.top" },
+  { github = "https://github.com/Wave233Lee" },
+  { steam = "https://steamcommunity.com/profiles/76561198236119120" },
+  { x-twitter = "https://twitter.com/WaveLee1997" },
 ]

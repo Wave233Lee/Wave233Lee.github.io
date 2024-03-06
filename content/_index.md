@@ -1,6 +1,12 @@
 ---
-title: "Welcome to Blowfish!"
-description: "This is a demo of adding content to the homepage."
+title: "Intro"
+description: ""
 ---
 
-### Welcome to my website! I'm really happy you stopped by.
+### 分享一些技术、游戏、动漫
+{{< keywordList >}}
+{{< keyword icon="tag" >}} Java民工 {{< /keyword >}}
+{{< keyword icon="tag" >}} 杂食单机玩家 {{< /keyword >}}
+{{< keyword icon="tag" >}} 二游爱好者 {{< /keyword >}}
+{{< keyword icon="tag" >}} 爱看动画片 {{< /keyword >}}
+{{< /keywordList >}}

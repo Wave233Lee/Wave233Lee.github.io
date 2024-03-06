@@ -1,13 +1,15 @@
-+++
-date = '2024-03-06T11:04:24+08:00'
-title = '异步场景日志链路追踪'
-+++
+---
+date: '2024-03-06T11:04:24+08:00'
+title: '异步场景日志链路追踪'
+summary: "分布式架构下的日志全链路追踪"
+tags: ["Java"]
+---
 
-# 1，概述
+## 1，概述
 线上环境排查问题需要对某次请求的所有日志进行链路追踪。logback 的 MDC 提供的日志追踪方案仅支持单个线程内的追踪，这是因为 MDC 是基于 ThreadLocal 实现，无法跨线程传递 traceId。阿里开源的TransmittableThreadLocal 基于 InheritableThreadLocal 扩展，支持线程池跨线程传递变量。借此重写 MDCAdapter 即可实现异步场景下的日志链路追踪。
 ## 2，MDC 改造
 ### 2.0，依赖引入
-```
+``` html
 <dependency>
     <groupId>com.alibaba</groupId>
     <artifactId>transmittable-thread-local</artifactId>
@@ -16,7 +18,7 @@ title = '异步场景日志链路追踪'
 ```
 ### 2.1，重写 MDCAdapter
 MDC 存储线程变量的逻辑位于 MDCAdapter
-```
+``` java
 package org.slf4j;
 
 
@@ -205,7 +207,7 @@ public class TtlMDCAdapter implements MDCAdapter {
 ```
 ### 2.2，加载TtlMDCAdapter
 定义初始化方法
-```
+``` java
 package com.midea.escm.core.config;
 
 import org.slf4j.TtlMDCAdapter;
@@ -229,7 +231,7 @@ public class TtlMDCAdapterInitializer implements ApplicationContextInitializer<C
 }
 ```
 启动类里增加 initializer _（ApplicationContextInitializer另有两种使用方法，在此不赘述）_
-```
+``` java
 public static void main(String[] args) {
     SpringApplication springApplication = new SpringApplication(VbpApplication.class);
 
@@ -241,7 +243,7 @@ public static void main(String[] args) {
 ## 3，MDC 使用
 ### 3.1 添加 traceId
 在web请求拦截器用调用 MDC.put 添加traceId
-```
+``` java
 public void addInterceptors(InterceptorRegistry registry) {
 
     registry.addWebRequestInterceptor(new WebRequestInterceptor() {
@@ -266,7 +268,7 @@ public void addInterceptors(InterceptorRegistry registry) {
 ```
 ### 3.2 日志打印
 在 logback-spring.xml 的输出格式中使用 %X{traceId} 获取 traceId 的值
-```
+``` html
 <property name="log.colorPattern"
           value="%date{yyyy-MM-dd HH:mm:ss} | %cyan(%-5level) | %yellow(%thread) | %red([TraceId:%X{traceId}] | %magenta(%file:%line) | %green(%logger{96}) | (%msg%n%n)"/>
 ```
