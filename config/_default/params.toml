@@ -18,7 +18,7 @@ enableCodeCopy = true
 disableImageOptimization = false
 disableTextInHeader = false
 
-defaultBackgroundImage = "background1.png" # used as default for background images
+defaultBackgroundImage = "background.png" # used as default for background images
 defaultFeaturedImage = "featured.png" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
@@ -37,7 +37,7 @@ smartTOCHideUnfocusedChildren = true
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "background1.png" # used in: hero, and card
+  homepageImage = "background.png" # used in: hero, and card
   showRecent = false
   showRecentItems = 6
   showMoreLink = true
