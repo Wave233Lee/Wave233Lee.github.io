@@ -21,11 +21,7 @@ title = "Blowfish"
 links = [
   { email = "mailto:hello@your_domain.com" },
   { link = "https://link-to-some-website.com/" },
-  { discord = "https://discord.gg/invitecode" },
-  { facebook = "https://facebook.com/username" },
   { github = "https://github.com/username" },
-  { instagram = "https://instagram.com/username" },
   { steam = "https://steamcommunity.com/profiles/userid" },
-  { telegram = "https://t.me/username" },
   { x-twitter = "https://twitter.com/username" },
 ]
