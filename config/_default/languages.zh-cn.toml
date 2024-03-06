@@ -1,0 +1,31 @@
+languageCode = "zh-cn"
+languageName = "Simplified Chinese"
+weight = 1
+title = "Blowfish"
+
+[params]
+  displayName = "简体中文"
+  isoCode = "zh-cn"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  # description = "My awesome website"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[author]
+  name = "若谷"
+  image = "avatar.jpg"
+  headline = "404 Not Found"
+  bio = ""
+links = [
+  { email = "mailto:hello@your_domain.com" },
+  { link = "https://link-to-some-website.com/" },
+  { discord = "https://discord.gg/invitecode" },
+  { facebook = "https://facebook.com/username" },
+  { github = "https://github.com/username" },
+  { instagram = "https://instagram.com/username" },
+  { steam = "https://steamcommunity.com/profiles/userid" },
+  { telegram = "https://t.me/username" },
+  { x-twitter = "https://twitter.com/username" },
+]
