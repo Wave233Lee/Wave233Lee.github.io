@@ -22,8 +22,8 @@ defaultBackgroundImage = "background.png" # used as default for background image
 defaultFeaturedImage = "featured.png" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
-smartTOC = true
-smartTOCHideUnfocusedChildren = true
+smartTOC = false
+smartTOCHideUnfocusedChildren = false
 
 [header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
@@ -50,6 +50,7 @@ smartTOCHideUnfocusedChildren = true
   showDate = true
   showViews = false
   showLikes = false
+  showComments = true
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
