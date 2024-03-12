@@ -1,7 +1,7 @@
 ---
 date: '2024-03-11T18:04:24+08:00'
 title: 'MinIO 安装运行'
-summary: "MinIO 安装运行"
+summary: "对象存储 MinIO 简单安装配置与运行"
 tags: ["Java"]
 ---
 
