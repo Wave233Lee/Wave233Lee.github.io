@@ -2,7 +2,7 @@
 date: '2024-03-11T18:04:24+08:00'
 title: 'MinIO 安装运行'
 summary: "对象存储 MinIO 简单安装配置与运行"
-tags: ["Java"]
+tags: ["OSS"]
 ---
 
 #### 使用Docker 运行单点模式
@@ -14,12 +14,14 @@ docker run -p 9000:9000 -di \
   -e "MINIO_SECRET_KEY=bzXKoRrrqbpQ+1ezmJkBKxusVc5JZc02cBNm5vEd" \
   minio/minio server /data
 ```
-> -p 端口映射  将外部端口 映射到 容器内部端口
-> --name 自定义容器名称 
-> -di 后台运行的方式运行 
-> --restart=always  一旦docker重启或者开启时，也自动启动镜像 
-> -e 设置系统变量  在这里是设置Minio的ACCESS_KEY和SECRET_KEY 
-> -v 挂载文件  将系统文件  映射到  容器内部对应的文件夹
+| Parameter        | Description                              |
+|------------------|------------------------------------------|
+| -p               | 端口映射，将外部端口映射到容器内部端口                      |
+| --name           | 自定义容器名称                                  |
+| -di              | 后台运行的方式运行                                |
+| --restart=always | 一旦docker重启或者开启时，也自动启动镜像                  |
+| -e               | 设置系统变量，在这里是设置Minio的ACCESS_KEY和SECRET_KEY |
+| -v               | 挂载文件，将系统文件映射到容器内部对应的文件夹                  |
 
 #### 以普通用户身份运行MinIO Docker
 Docker提供了标准化的机制，可以以非root用户身份运行docker容器。
