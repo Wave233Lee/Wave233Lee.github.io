@@ -2,7 +2,7 @@
     <!-- ... -->
     <link
             rel="stylesheet"
-            href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+            href="https://unpkg.com/@waline/client@v3/dist/waline.css"
     />
     <!-- ... -->
 </head>
@@ -28,7 +28,7 @@
 
 <div id="waline"></div>
 <script type="module">
-    import {init} from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    import {init} from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
     init({
         el: '#waline',
@@ -36,10 +36,10 @@
         lang: 'zh-CN',
         emoji: [
             '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+            '//unpkg.com/@waline/emojis@1.2.0/bilibili',
             '//unpkg.com/@waline/emojis@1.2.0/tieba',
             '//unpkg.com/@waline/emojis@1.2.0/qq',
             '//unpkg.com/@waline/emojis@1.2.0/alus',
-            '//unpkg.com/@waline/emojis@1.1.0/bilibili',
             'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
         ],
         dark: 'html[class="scroll-smooth dark"]',
