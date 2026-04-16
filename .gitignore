@@ -30,8 +30,5 @@ yarn.lock
 .idea
 *.iml
 
-# github
-.github
-
 # vscode
 .vscode
