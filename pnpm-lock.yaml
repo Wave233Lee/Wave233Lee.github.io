@@ -18,8 +18,8 @@ importers:
         specifier: ^3.6.0
         version: 3.7.2
       '@astrojs/svelte':
-        specifier: 7.2.3
-        version: 7.2.3(@types/node@25.6.0)(astro@5.13.10(@types/node@25.6.0)(jiti@1.21.7)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@1.21.7)(stylus@0.64.0)(svelte@5.55.4)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3)
+        specifier: 7.2.5
+        version: 7.2.5(@types/node@25.6.0)(astro@5.13.10(@types/node@25.6.0)(jiti@1.21.7)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@1.21.7)(stylus@0.64.0)(svelte@5.55.4)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3)
       '@astrojs/tailwind':
         specifier: ^6.0.2
         version: 6.0.2(astro@5.13.10(@types/node@25.6.0)(jiti@1.21.7)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3))(tailwindcss@3.4.19(yaml@2.8.3))
@@ -221,8 +221,8 @@ packages:
   '@astrojs/sitemap@3.7.2':
     resolution: {integrity: sha512-PqkzkcZTb5ICiyIR8VoKbIAP/laNRXi5tw616N1Ckk+40oNB8Can1AzVV56lrbC5GKSZFCyJYUVYqVivMisvpA==}
 
-  '@astrojs/svelte@7.2.3':
-    resolution: {integrity: sha512-45D9xKOvYBQ/Z7lgt/g8Mli1cD5rJxnnz44i6MDSa2oKxMVocT6pHT/+Uou1a3Ch3yGZ5KpJRyJC6HWCOzreqg==}
+  '@astrojs/svelte@7.2.5':
+    resolution: {integrity: sha512-Tl5aF/dYbzzd7sLpxMBX6pRz3yJ1B4pilt9G3GJbj0I0/doJHIEmerNQsnlxX0/InNKUhMXXN8wyyet9VhA+Zw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       astro: ^5.0.0
@@ -5065,7 +5065,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.3.6
 
-  '@astrojs/svelte@7.2.3(@types/node@25.6.0)(astro@5.13.10(@types/node@25.6.0)(jiti@1.21.7)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@1.21.7)(stylus@0.64.0)(svelte@5.55.4)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3)':
+  '@astrojs/svelte@7.2.5(@types/node@25.6.0)(astro@5.13.10(@types/node@25.6.0)(jiti@1.21.7)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@1.21.7)(stylus@0.64.0)(svelte@5.55.4)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.55.4)(vite@6.4.2(@types/node@25.6.0)(jiti@1.21.7)(stylus@0.64.0)(terser@5.46.1)(yaml@2.8.3))
       astro: 5.13.10(@types/node@25.6.0)(jiti@1.21.7)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3)
