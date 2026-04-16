@@ -3,6 +3,8 @@ title: 硬盘挂载
 published: 2024-03-12
 description: "Linux挂载硬盘操作流程"
 tags: ["Linux"]
+image: "https://file.wavelee.top/hard-disk-mount.jpg"
+category: "运维"
 draft: false
 ---
 

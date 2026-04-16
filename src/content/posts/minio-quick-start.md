@@ -3,6 +3,8 @@ title: MinIO 安装运行
 published: 2024-03-11
 description: "对象存储 MinIO 简单安装配置与运行"
 tags: ["OSS"]
+image: "https://file.wavelee.top/minio-quick-start.jpg"
+category: "运维"
 draft: false
 ---
 

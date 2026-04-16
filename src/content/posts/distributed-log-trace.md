@@ -3,6 +3,8 @@ title: 异步场景日志链路追踪
 published: 2024-03-06
 description: "分布式架构下的日志全链路追踪"
 tags: ["Java"]
+image: "https://file.wavelee.top/distributed-log-trace.jpg"
+category: "后端开发"
 draft: false
 ---
 
